@@ -14,11 +14,11 @@ html, body {
 .fullscreen-image {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh; /* Ensure it covers the full viewport height */
   background-image: url('../public/bg.png'); /* Replace this with your background image path */
   background-size: cover; /* Ensures the image covers the entire screen */
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
   display: flex; /* Flexbox to center the content */
   flex-direction: column; /* Stack logo and text vertically */
   align-items: center; /* Horizontally center the content */
@@ -47,8 +47,23 @@ html, body {
   .centered-logo {
     max-width: 70%; /* Slightly larger logo for smaller screens */
   }
+
   .coming-soon-text {
     font-size: 1.8rem; /* Slightly smaller text for smaller screens */
     margin-top: 20px; /* Adjust spacing */
+    padding: 10px 20px; /* Adjust padding */
+  }
+}
+
+/* Media query for very small screens (e.g., mobile phones) */
+@media screen and (max-width: 480px) {
+  .centered-logo {
+    max-width: 80%; /* Make the logo even larger for very small screens */
+  }
+
+  .coming-soon-text {
+    font-size: 1.6rem; /* Even smaller text for smaller devices */
+    padding: 8px 15px; /* Adjust padding for better readability */
+    margin-top: 15px; /* Adjust spacing */
   }
 }
