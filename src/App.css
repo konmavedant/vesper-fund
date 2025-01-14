@@ -58,7 +58,7 @@ html, body {
 /* Media query for very small screens (e.g., mobile phones) */
 @media screen and (max-width: 480px) {
   .centered-logo {
-    max-width: 80%; /* Make the logo even larger for very small screens */
+    max-width: 130%; /* Make the logo even larger for very small screens */
   }
 
   .coming-soon-text {
